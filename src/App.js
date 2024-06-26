@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './ui/pages/Home/Home';
+import styles from './App.module.css'
+import { Header } from './ui/components/Header/Header';
+import { MenuLateral } from './ui/components/MenuLateral/MenuLateral';
+import { Link, Route, Routes } from 'react-router-dom';
+import { Pokemon } from './ui/pages/Pokemon/Pokemon';
+import { Specie } from './ui/pages/Species/Specie';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className={styles['conteudo-pokedex']}>
+        <div className={styles['menu-lateral']}>
+          <MenuLateral/>
+        </div>
+        <div className={styles['home']}>
+          <Routes>
+            <Route path="/" element={<Home url={'https://pokeapi.co/api/v2/pokemon?'}/>} />
+            <Route path="/species/:id" element={<Specie/>} />
+            <Route path="/pokemons/:id" element={<Pokemon/>} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
+

@@ -1,0 +1,118 @@
+.header-pokemon-detail {
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.title-name{
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px ;
+}
+
+.pokemons-history {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemons-history a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.details-pokemon {
+    background-color: white;
+    margin: -30px 20px 0 20px;
+    border-radius: 20px;
+    padding: 50px 20px 20px 20px;
+}
+
+.about-pokemon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-pokemon h3 {
+    color: #B8B8B8;
+}
+
+.about-pokemon-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.grid-single-pokemon {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-single-pokemon span:nth-child(2)  {
+    color: #B8B8B8;
+}
+
+.grid-single-pokemon span:nth-child(1)  {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.section-abilities {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-abilities > p {
+    color: #797878;
+}
+.abilities-pokemon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.abilite-single {
+    border-radius: 15px;
+    padding: 7px;
+    align-items: center;
+    color: #fff;
+}
+.abilite-single:hover {
+    border-radius: 15px;
+    padding: 7px;
+    align-items: center;
+    color: #fff;
+    opacity: .5;
+    cursor: vertical-text;
+    transition: .5s;
+}
+
+.base-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.base-stats > p{
+    color: #797878;
+}
+
+.stats-detail-pokemon {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.stats-single {
+    display: flex;
+}

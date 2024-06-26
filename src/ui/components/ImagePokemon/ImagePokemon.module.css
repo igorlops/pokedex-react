@@ -1,0 +1,17 @@
+.imagem-pokemon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+.imagem-pokemon img {
+    z-index: 2;
+}
+
+.imagem-pokemon svg {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    z-index: 1;
+}
+

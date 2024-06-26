@@ -1,3 +1,41 @@
+.type-bug{ background-color: #8CB230;}
+.type-dark{ background-color: #58575F;}
+.type-dragon{ background-color: #0F6AC0;}
+.type-electric{ background-color: #EED535;}
+.type-fairy{ background-color: #ED6EC7;}
+.type-fighting{ background-color: #D04164;}
+.type-fire{ background-color: #FD7D24;}
+.type-flying{ background-color: #748FC9;}
+.type-ghost{ background-color: #556AAE;}
+.type-grass{ background-color: #62B957;}
+.type-ground{ background-color: #DD7748;}
+.type-ice{ background-color: #61CEC0;}
+.type-normal{ background-color: #9DA0AA;}
+.type-poison{ background-color: #A552CC;}
+.type-psychic{ background-color: #EA5D60;}
+.type-rock{ background-color: #BAAB82;}
+.type-steel{ background-color: #417D9A;}
+.type-water{ background-color: #4A90DA;}
+
+.background-type-bug{background-color:#8BD674;} 
+.background-type-dark{background-color:#6F6E78;} 
+.background-type-dragon{background-color:#7383B9;} 
+.background-type-electric{background-color:#F2CB55;} 
+.background-type-fairy{background-color:#EBA8C3;} 
+.background-type-fighting{background-color:#EB4971;} 
+.background-type-fire{background-color:#FFA756;} 
+.background-type-flying{background-color:#83A2E3;} 
+.background-type-ghost{background-color:#8571BE;} 
+.background-type-grass{background-color:#8BBE8A;} 
+.background-type-ground{background-color:#F78551;} 
+.background-type-ice{background-color:#91D8DF;} 
+.background-type-normal{background-color:#B5B9C4;} 
+.background-type-poison{background-color:#9F6E97;} 
+.background-type-psychic{background-color:#FF6568;} 
+.background-type-rock{background-color:#D4C294;} 
+.background-type-steel{background-color:#4C91B2;} 
+.background-type-water{background-color:#58ABF6;} 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,0 +1,82 @@
+.container {
+    padding: 0 5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+} 
+
+.area-pokemons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+    gap: 5px;
+}
+
+.spin {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ccc; /* Cor de fundo do círculo */
+    border-top: 10px solid #3498db; /* Cor do círculo que gira */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(253, 95, 121);
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden; /* Importante para esconder o overflow do pseudo-elemento */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* Inicia do lado direito */
+    width: 0; /* Largura inicial */
+    height: 100%;
+    background-color: darkred; /* Cor do efeito */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+    z-index: 0; /* Coloca o pseudo-elemento atrás do texto */
+}
+
+.btn:hover::after {
+    width: 100%; /* Expande a largura para 100% ao passar o mouse */
+}
+
+.btn:hover {
+    color: white; /* Mantém a cor do texto ao passar o mouse */
+    transition: .3s;
+    scale: .95;
+}
+.btn:not(:hover) {
+    color: white; /* Mantém a cor do texto ao passar o mouse */
+    transition: .3s;
+    scale: 1;
+}
+
+.btn > span {
+    position: relative;
+    z-index: 2;
+}
+
+.rodape-home {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
